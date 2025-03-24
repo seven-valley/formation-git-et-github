@@ -51,12 +51,14 @@ chaque développeur. Une synchronisation est donc nécessaire périodiquement
 ## Les systèmes centralisés (CVS, SVN)
 
 diagramme 1
+
 --------
 
 ## Les systèmes distribués : Git
 
 
 diagramme 2
+
 --------
 
 ## Avantages d’un système distribué
@@ -78,14 +80,15 @@ particulières au départ
  - Aucun serveur maître n’est nécessairement requis, un référentiel local peut suffire.
  - Chaque développeur a son dépôt autonome.
 - Fichiers identifiés par un hash SHA-1
- - Aucun diff n’est stocké
- - Si un fichier est modifié, deux versions sont enregistrées
+    - Aucun diff n’est stocké
+    - Si un fichier est modifié, deux versions sont enregistrées
 ### Pourquoi Git ?
 - Robustesse
 - Architecture distribuée
 - Conception simple
 - Support de milliers de branches en parallèle
 - Gestion efficace des projets d’envergure
+  
  https://git-scm.com
 
  --------
