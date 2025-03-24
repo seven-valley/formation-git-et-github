@@ -14,7 +14,7 @@
 - Pouvoir restaurer une version antérieure d’un fichier 
 ### Solution
 - Les systèmes de gestion de version 
- - SCM : Source Code Management
+    - SCM : Source Code Management
 ### Rôles d’un SCM concernant la gestion des versions
 - Ramener un fichier à un état précédent
 - Visualiser les changements au cours du temps
@@ -41,11 +41,11 @@ chaque développeur. Une synchronisation est donc nécessaire périodiquement
 ## DVCS vs. CVCS
 ### CVCS 
 - Centralized Version Control Systems
- - Systèmes de gestion de version centralisés
+    - Systèmes de gestion de version centralisés
 - CVS, Subversion, …
 ### DVCS
 - Distributed Version Control Systems
- - Systèmes de gestion de version distribués
+    - Systèmes de gestion de version distribués
 - Git, Mercurial, ...
 --------
 ## Les systèmes centralisés (CVS, SVN)
@@ -64,11 +64,11 @@ diagramme 2
 ## Avantages d’un système distribué
 - L’historique des sources et des versions d’un projet est présent sur plusieurs 
 machines.
- - Solution de secours en cas de crash du serveur.
+    - Solution de secours en cas de crash du serveur.
 - Il n’est pas nécessaire d’être connecté au réseau pour pouvoir utiliser la gestion de version.
 - Permet de collaborer à un projet même sans avoir de permissions 
 particulières au départ
- - Les droits peuvent être accordés plus tard !
+    - Les droits peuvent être accordés plus tard !
 - Les accès quotidiens sont locaux, donc plus rapides
 
 --------
@@ -77,8 +77,8 @@ particulières au départ
 
  ### Particularités
 - Système décentralisé (DCVS)
- - Aucun serveur maître n’est nécessairement requis, un référentiel local peut suffire.
- - Chaque développeur a son dépôt autonome.
+    - Aucun serveur maître n’est nécessairement requis, un référentiel local peut suffire.
+    - Chaque développeur a son dépôt autonome.
 - Fichiers identifiés par un hash SHA-1
     - Aucun diff n’est stocké
     - Si un fichier est modifié, deux versions sont enregistrées
