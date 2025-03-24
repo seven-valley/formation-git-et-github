@@ -114,6 +114,6 @@ particulières au départ
 ### Commit
 - Collection de changements d’un ensemble de fichiers dans un dépôt.
 - Un commit est identifié par un hash SHA-1
- - Exemple : **8578958fcc7323c05108e3190e9b52958f1577b3**
- - En pratique, on utilisera seulement les 7 premiers digits pour identifier un commit
-  - Ici : **857895**
+    - Exemple : **8578958fcc7323c05108e3190e9b52958f1577b3**
+    - En pratique, on utilisera seulement les 7 premiers digits pour identifier un commit
+        - Ici : **857895**
