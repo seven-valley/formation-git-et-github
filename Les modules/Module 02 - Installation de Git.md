@@ -67,9 +67,18 @@ d’installer tout XCode.
     - Git Bash sous Windows (recommandé) ou une simple Invite de commande
 - Syntaxe :
     - git **commande** **arguments**
-
+  
     <img src="../img/02-git-commande.png" width="600">
 
 ```
 git --version
 ```
+
+## L’aide
+- **git help**
+    - Aide sur la syntaxe générale de Git.
+- **git help commande**
+    - Aide sur la syntaxe et l’usage de la commande donnée en argument.
+        - Affiche une « man page » dans un navigateur Web.
+- **git help tutorial**
+    - Un tutoriel précis et concis sur Git
