@@ -119,7 +119,7 @@ particulières au départ
         - Ici : **8578958**
 
 --------
-Etats d’un fichier avec Git
+## Etats d’un fichier avec Git
 ### Les états d’un fichier sont représentés selon leur présence dans l’une des 3 zones suivantes : 
 - Répertoire de travail (**Working Directory**)
     - Répertoire du système de fichiers sur lequel travaille le développeur.
@@ -132,3 +132,18 @@ pour Git.
 - Dépôt (**Git Repository**)
     - Les fichiers sont versionnés par Git qui en contient au moins une version.
     - Contient tous les commit et donc tout l’historique du projet.
+--------
+
+## Etats d’un fichier avec Git
+
+diagramme 3
+
+--------
+## Quelques ressources sur Git
+- Git Book  
+https://git-scm.com/book/fr/v2
+
+-Tutoriels d’Atlassian (SourceTree, BitBucket, …)  https://www.atlassian.com/git/tutorials
+
+- Git cheatsheet  
+http://ndpsoftware.com/git-cheatsheet.htm
