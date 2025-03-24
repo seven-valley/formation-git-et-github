@@ -143,7 +143,7 @@ diagramme 3
 - Git Book  
 https://git-scm.com/book/fr/v2
 
--Tutoriels d’Atlassian (SourceTree, BitBucket, …)  
+- Tutoriels d’Atlassian (SourceTree, BitBucket, …)  
 https://www.atlassian.com/git/tutorials
 
 - Git cheatsheet  
