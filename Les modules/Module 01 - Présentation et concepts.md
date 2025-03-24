@@ -116,4 +116,19 @@ particulières au départ
 - Un commit est identifié par un hash SHA-1
     - Exemple : **8578958fcc7323c05108e3190e9b52958f1577b3**
     - En pratique, on utilisera seulement les 7 premiers digits pour identifier un commit
-        - Ici : **857895**
+        - Ici : **8578958**
+
+--------
+Etats d’un fichier avec Git
+### Les états d’un fichier sont représentés selon leur présence dans l’une des 3 zones suivantes : 
+- Répertoire de travail (**Working Directory**)
+    - Répertoire du système de fichiers sur lequel travaille le développeur.
+    - Un fichier qui se trouve uniquement dans cette zone est un fichier totalement inconnu 
+pour Git.
+        - «Untracked file »
+- Zone d’index (**Staging Area**)
+    - Zone d’attente de commit indépendante du répertoire de travail.
+    - On y place les différents fichiers qui devront être intégrés au prochain commit.
+- Dépôt (**Git Repository**)
+    - Les fichiers sont versionnés par Git qui en contient au moins une version.
+    - Contient tous les commit et donc tout l’historique du projet.
