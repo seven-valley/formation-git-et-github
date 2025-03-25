@@ -118,9 +118,7 @@ de l'outil.
     - Le niveau local :
         - Les options ne sont alors valides que pour le dépôt Git sur lequel les options sont définies.
         - **git config --local** ...
-```
-git config --local ...
-```
+
 ## L'identité utilisateur
 - L'identité utilisateur permet de savoir qui apporte les modifications aux 
 fichiers du dépôt.
