@@ -52,6 +52,7 @@ d'installer tout XCode.
 ## Installation sous Windows
  - Un installeur graphique est disponible
     - https://git-scm.com/download/win
+       
 -Il installe : 
     - Une intégration à l'explorateur Windows
     - Git Bash, permettant de disposer du shell Bash sous Windows
