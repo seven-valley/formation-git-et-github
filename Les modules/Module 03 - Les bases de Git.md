@@ -65,9 +65,11 @@ plusieurs fichiers.
 message décrivant les modifications qui sont apportées au projet par cette 
 validation.
 - Validation avec ouverture de l’éditeur de texte pour la saisie du message : 
+
 ```
 git commit
-    ```
+```
+
 - Validation avec message : 
 ```
 git commit -m "Mon commentaire constructif"
