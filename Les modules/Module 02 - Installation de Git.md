@@ -108,14 +108,12 @@ de l'outil.
         - Les options concernent tous les utilisateurs de la machine.
         - git **config --system** ...
 
-```
-git config --system ...  
-```
+
 
     - Le niveau utilisateur : 
         - Les options ne concernent que l'utilisateur qui les définies.
         - git **config --global** ...
-        
+
 ```
 git config --global ...
 ```
