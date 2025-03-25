@@ -93,5 +93,19 @@ git commit -am "Mon commentaire constructif"
     - Idéalement, compile seul.
 - Un commit n’est pas, contrairement aux idées reçues, une liste 
 d’ajout/suppression/modification de lignes !
-- Git sauvegarde chaque fichier entièrement à chaque changement.
- o Avec des métadonnées (commentaire, auteur, email, date, …
+    - Git sauvegarde chaque fichier entièrement à chaque changement.
+        - Avec des métadonnées (commentaire, auteur, email, date, …)
+
+# Etats de fichiers
+- La commande git status permet de lister les modifications en cours du 
+dossier de travail et de la zone d’index.
+- En gros, les fichiers non enregistrés dans le dépôt.
+- Quatre états possibles :
+- **untracked**
+    - Non suivi, le fichier est inconnu de Git !
+- **unmodified**
+    - Le fichier n’a pas été modifié depuis son dernier ajout au dépôt.
+- **modified**
+    - Il y a des différences entre le fichier du répertoire de travail et celui du dépôt.
+- **staged**
+    - Le fichier est dans la zone d’index, il sera ajouté au prochain commit.
