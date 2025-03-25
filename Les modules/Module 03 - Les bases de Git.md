@@ -279,3 +279,48 @@ motifs précédents.
 ```
 git rm--cached /build-r
 ```
+
+# Exemple de fichier .gitignore
+fichier <code>.gitignore</code>
+```
+# pas de fichier .a
+*.a
+
+# mais suivre lib.a malgré la règle précédent
+!lib.a
+
+# ignorer uniquement le fichier TODO à la racine du projet
+/TODO
+
+# ignorer tous les fichier dans le répertoire build
+build/
+
+# ignorer doc/notes.txt, mais pas doc/server/arch.txt
+doc/*.txt
+
+# ignorer tous les fichiers .txt sous le répertoire doc/
+doc/**/*.txt
+
+```
+
+# Supprimer des fichiers non versionnés
+
+ - Vérifier les fichiers qui seront supprimés
+````
+git clean -n
+````
+- Supprimer les fichiers
+````
+git clean -f
+````
+- Supprimer fichiers et dossiers
+````
+git clean -df
+````
+- Supprimer des fichiers et dossiers y compris ceux listés dans .gitignore
+````
+git clean -xdf
+````
+- Supprimer seulement des fichiers dans .gitignore
+````
+git clean -Xf````
