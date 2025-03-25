@@ -77,11 +77,11 @@ git commit -m "Mon commentaire constructif"
 ```
 
 - Indexation et commit en une seule commande ! : 
-
+  
 ```
 git commit -am "Mon commentaire constructif"
 ```
-
+  
     - Cela permet d’enregistrer toutes les modifications en cours, même celles non-indexées ! 
     - ATTENTION : Cela ne s’applique qu’aux fichiers déjà existant dans le dépôt
  
