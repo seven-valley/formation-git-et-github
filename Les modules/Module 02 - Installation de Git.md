@@ -110,6 +110,7 @@ de l'outil.
 
 ```
 git config --system ...
+
 ```
 
     - Le niveau utilisateur : 
