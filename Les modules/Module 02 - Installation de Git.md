@@ -83,6 +83,9 @@ git --version
 ## L'aide
 - **git help**
     - Aide sur la syntaxe générale de Git.
+```
+git help
+```
 - **git help commande**
     - Aide sur la syntaxe et l'usage de la commande donnée en argument.
         - Affiche une « man page » dans un navigateur Web.
