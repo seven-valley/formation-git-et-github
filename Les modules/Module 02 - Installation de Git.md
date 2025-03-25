@@ -114,9 +114,7 @@ de l'outil.
         - Les options ne concernent que l'utilisateur qui les définies.
         - git **config --global** ...
 
-```
-git config --global ...
-```
+
     - Le niveau local :
         - Les options ne sont alors valides que pour le dépôt Git sur lequel les options sont définies.
         - **git config --local** ...
