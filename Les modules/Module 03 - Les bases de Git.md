@@ -88,7 +88,7 @@ git commit -am "Mon commentaire constructif"
 # git commit : Bonnes pratiques
 
 - Bonne pratique de « commit » Git :
-    - Ne concerne qu'une seule fonctionnalité du projet ;
+    - Ne concerne qu'une seule fonctionnalité du projet **feature** ou **refactoring** ;
     - Est le plus petit possible tout en restant cohérent ;
     - Idéalement, compile seul.
 - Un commit n'est pas, contrairement aux idées reçues, une liste 
@@ -123,8 +123,12 @@ imprime ecran
 Lorsque des fichiers sont modifiés, ils doivent être de nouveau ajoutés à la 
 zone d'index avant d'être validés dans le dépôt.
 - Les commandes suivantes sont donc nécessaires : 
-    - git add .
-- git commit -m "..."
+```
+git add .
+```
+```
+git commit -m "message ici"
+```
 - Ces deux commandes peuvent être synthétisées en une seule (car le fichier 
 existe déjà dans le dépôt) : 
     - git commit -am "..."
