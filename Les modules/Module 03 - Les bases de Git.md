@@ -1,5 +1,5 @@
 # Module 03 - Les bases de Git
--Le dépôt
+- Le dépôt
     - Création d’un dépôt local.
 - Travailler avec le dépôt
     - Publier des fichiers.
