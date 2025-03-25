@@ -57,7 +57,7 @@ d'installer tout XCode.
     - Git Bash, permettant de disposer du shell Bash sous Windows
         - Et donc de certaines commandes Linux.
     - Un gestionnaire de mots de passe
-    - Permettant de mémoriser les authentifications aux différents dépôts
+        - Permettant de mémoriser les authentifications aux différents dépôts
 
  <img src="../img/02-git-bash.png" width="600">
 
