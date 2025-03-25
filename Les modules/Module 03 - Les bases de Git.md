@@ -34,3 +34,23 @@ nécessaire.
     ```
     git init <nom_répertoire>
     ```
+
+# Ajout de fichiers au dépôt
+- Pour qu’un fichier passe sous contrôle de version Git, il faut d’abord l’ajouter 
+au dépôt.
+- Commande git add
+    - Elle va ajouter le(s) fichiers dans la zone d’index, ils sont simplement marqués et ne 
+sont pas encore ajoutés !
+- Ajouter un fichier :
+```
+git add test.js
+```
+- Ajouter tous les fichiers du répertoire :
+```
+git add .
+```
+- Ajouter de manière interactive :
+```
+git add -p
+```
+- A tout moment, la commande git status permet de connaître l’état du dépôt Git ! 
