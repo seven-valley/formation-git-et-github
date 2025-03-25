@@ -184,16 +184,98 @@ git log --decorate
 ```
 git log --oneline--graph --decorate
 ```
-# Les fichiers dans l’historique
-- La commande git log permet d’identifier chaque commit dans l’historique.
+# Les fichiers dans l'historique
+- La commande git log permet d'identifier chaque commit dans l'historique.
 - La commande git show permet de connaitre la liste des fichiers modifiés 
 par un commit.
--Syntaxe : 
+    - Syntaxe : 
+    ```
+    git show <numéro de commit.>
+    ```
+    **Affiche toutes les métadonnées, le nom et le contenu du fichier.**
+    ```
+    git show --name-only <numéro de commit.>
+    ```
+    **Permet un affichage plus concis.**
+
+# Les fichiers dans l'historique (suite)
+- A l'inverse de la commande git show, il est également possible de lister les 
+commit ayant impactés un fichier particulier.
 ```
-git show <numéro de commit.>
+git log -- <nom du fichier>
 ```
-Affiche toutes les métadonnées, le nom et le contenu du fichier.
+
+# Visualiser les différences dans l'historique
+
+- Les différences entre le répertoire de travail et la zone d'index
 ```
-git show --name-only <numéro de commit.>
+git diff
 ```
-Permet un affichage plus concis.
+- Les différences entre la zone d'index et le dernier commit
+```
+git diff--cached
+```
+- Les différences entre le répertoire de travail et le dernier commit
+```
+git diff HEAD
+```
+- Les différences mot à mot
+```
+git diff--word-diff
+```
+- Les différences lettre à lettre
+```
+git diff--color-words=.
+```
+- Les différences entre le dernier commit et l'avant dernier
+```
+git diff HEAD^ HEAD
+```
+
+# Supprimer des changements
+- Checkout
+    ```
+    git checkout <fichier/branche/commit>
+    ```
+    - Récupérer la dernière version (depuis le dépôt) : un fichier / un commit / une branche
+- Il est possible d'indiquer un numéro de révision pour restaurer le fichier à une 
+version antérieure : 
+    ```
+    git checkout <numero> -- <fichier/branche/commit>
+    ```
+- Reset
+    - Suppression effective !
+- Exemple : Annuler les 2 derniers commits
+    ```
+    git reset --soft HEAD~2
+    ```
+    - Les modifications sont laissées dans l'index.
+    ```
+    git reset --mixed HEAD~2
+    ```
+    - Les modifications sont supprimées de l'index mais sont conservées dans le répertoire de 
+travail (comportement par défaut).
+    ```
+    git reset --hard HEAD~2
+    ```
+    - Les modifications sont supprimées de l'index ET du répertoire de travail
+
+# Les commandes de l'historique
+diagramme
+
+# Ignorer des fichiers
+
+Il est possible d’exclure des fichiers du contrôle de version Git.
+    - Fichiers de préférences d’IDE, résultats de build,…
+- Ajouter un fichier <code>.gitignore</code> à la racine du projet.
+    - Ce fichier contient des motifs de spécification de fichiers/répertoires.
+    - Règles : 
+        - Les lignes vides ou commençant par # sont ignorées.
+        - Les motifs d’expression des shells sont utilisables (caractères joker).
+        - Les motifs se terminant par un / indiquent des répertoires.
+        - Les motifs commençant par ! indiquent des éléments à inclure malgré les autres 
+motifs précédents.
+- Supprimer du dépôt un fichier ignoré après un push : 
+```
+git rm--cached /build-r
+```
