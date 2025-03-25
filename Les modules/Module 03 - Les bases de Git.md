@@ -54,3 +54,38 @@ git add .
 git add -p
 ```
 - A tout moment, la commande git status permet de connaître l’état du dépôt Git ! 
+
+# Valider des fichiers dans le dépôt
+- Valider les fichiers dans le dépôt consiste à envoyer les fichiers présents dans la 
+zone d’index dans le dépôt.
+    - C’est le « commit » !
+    - Chaque commit concerne une collection de modifications apportées à un ou 
+plusieurs fichiers.
+- Pour le bon suivi de l’historique du projet, chaque commit doit être associé à un 
+message décrivant les modifications qui sont apportées au projet par cette 
+validation.
+- Validation avec ouverture de l’éditeur de texte pour la saisie du message : 
+```
+git commit
+    ```
+- Validation avec message : 
+```
+git commit -m "Mon commentaire constructif"
+```
+- Indexation et commit en une seule commande ! : 
+```
+git commit -am "Mon commentaire constructif"
+```
+    - Cela permet d’enregistrer toutes les modifications en cours, même celles non-indexées ! 
+    - ATTENTION : Cela ne s’applique qu’aux fichiers déjà existant dans le dépôt
+ 
+# git commit : Bonnes pratiques
+
+- Bonne pratique de « commit » Git :
+    - Ne concerne qu’une seule fonctionnalité du projet ;
+    - Est le plus petit possible tout en restant cohérent ;
+    - Idéalement, compile seul.
+- Un commit n’est pas, contrairement aux idées reçues, une liste 
+d’ajout/suppression/modification de lignes !
+- Git sauvegarde chaque fichier entièrement à chaque changement.
+ o Avec des métadonnées (commentaire, auteur, email, date, …
