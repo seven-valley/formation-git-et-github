@@ -107,13 +107,21 @@ de l'outil.
     - Le niveau système :
         - Les options concernent tous les utilisateurs de la machine.
         - git **config --system** ...
+```
+git config --system ...
+```
     - Le niveau utilisateur : 
         - Les options ne concernent que l'utilisateur qui les définies.
         - git **config --global** ...
+```
+git config --global ...
+```
     - Le niveau local :
         - Les options ne sont alors valides que pour le dépôt Git sur lequel les options sont définies.
         - **git config --local** ...
-
+```
+git config --local ...
+```
 ## L'identité utilisateur
 - L'identité utilisateur permet de savoir qui apporte les modifications aux 
 fichiers du dépôt.
