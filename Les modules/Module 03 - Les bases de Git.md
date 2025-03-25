@@ -323,4 +323,5 @@ git clean -xdf
 ````
 - Supprimer seulement des fichiers dans .gitignore
 ````
-git clean -Xf````
+git clean -Xf
+````
