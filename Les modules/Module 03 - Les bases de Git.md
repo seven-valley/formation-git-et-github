@@ -82,8 +82,8 @@ git commit -m "Mon commentaire constructif"
 git commit -am "Mon commentaire constructif"
 ```
   
-    - Cela permet d’enregistrer toutes les modifications en cours, même celles non-indexées ! 
-    - ATTENTION : Cela ne s’applique qu’aux fichiers déjà existant dans le dépôt
+- Cela permet d’enregistrer toutes les modifications en cours, même celles non-indexées ! 
+- ATTENTION : Cela ne s’applique qu’aux fichiers déjà existant dans le dépôt
  
 # git commit : Bonnes pratiques
 
