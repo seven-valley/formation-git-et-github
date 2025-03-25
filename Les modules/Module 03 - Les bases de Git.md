@@ -1,10 +1,10 @@
 # Module 03 - Les bases de Git
 - Le dépôt
-    - Création d’un dépôt local.
+    - Création d'un dépôt local.
 - Travailler avec le dépôt
     - Publier des fichiers.
     - Enregistrer des modifications.
-    - Visualiser l’historique.
+    - Visualiser l'historique.
     - Annuler des actions.
 
 # Dossier de travail vs. Dépôt Git
@@ -13,15 +13,15 @@
     - Il peut exister avant une prise en charge par Git.
     - Il est local sur le poste de travail du développeur.
 - Le dépôt Git :
-    - Il contient tout l’historique du projet, toutes les modifications, toutes les 
+    - Il contient tout l'historique du projet, toutes les modifications, toutes les 
 révisions…
-    - C’est le dossier .git du dossier de travail 
+    - C'est le dossier .git du dossier de travail 
 
 # Le dépôt Git
-- Un dépôt Git est un répertoire contenant l’historique d’un projet logiciel.
+- Un dépôt Git est un répertoire contenant l'historique d'un projet logiciel.
 - Un dépôt local :
     - Est situé sur la machine du développeur ;
-    - N’est pas partagé entre plusieurs développeurs.
+    - N'est pas partagé entre plusieurs développeurs.
 - Pour créer un dépôt, il faut initialiser un répertoire avec la structure 
 nécessaire.
 - Deux cas de figure : 
@@ -30,16 +30,16 @@ nécessaire.
     ```
     git init
     ```
-    - Le répertoire n’existe pas :
+    - Le répertoire n'existe pas :
     ```
     git init <nom_répertoire>
     ```
 
 # Ajout de fichiers au dépôt
-- Pour qu’un fichier passe sous contrôle de version Git, il faut d’abord l’ajouter 
+- Pour qu'un fichier passe sous contrôle de version Git, il faut d'abord l'ajouter 
 au dépôt.
 - Commande git add
-    - Elle va ajouter le(s) fichiers dans la zone d’index, ils sont simplement marqués et ne 
+    - Elle va ajouter le(s) fichiers dans la zone d'index, ils sont simplement marqués et ne 
 sont pas encore ajoutés !
 - Ajouter un fichier :
 ```
@@ -53,18 +53,18 @@ git add .
 ```
 git add -p
 ```
-- A tout moment, la commande git status permet de connaître l’état du dépôt Git ! 
+- A tout moment, la commande git status permet de connaître l'état du dépôt Git ! 
 
 # Valider des fichiers dans le dépôt
 - Valider les fichiers dans le dépôt consiste à envoyer les fichiers présents dans la 
-zone d’index dans le dépôt.
-    - C’est le « commit » !
+zone d'index dans le dépôt.
+    - C'est le « commit » !
     - Chaque commit concerne une collection de modifications apportées à un ou 
 plusieurs fichiers.
-- Pour le bon suivi de l’historique du projet, chaque commit doit être associé à un 
+- Pour le bon suivi de l'historique du projet, chaque commit doit être associé à un 
 message décrivant les modifications qui sont apportées au projet par cette 
 validation.
-- Validation avec ouverture de l’éditeur de texte pour la saisie du message : 
+- Validation avec ouverture de l'éditeur de texte pour la saisie du message : 
 
 ```
 git commit
@@ -82,30 +82,101 @@ git commit -m "Mon commentaire constructif"
 git commit -am "Mon commentaire constructif"
 ```
   
-- Cela permet d’enregistrer toutes les modifications en cours, même celles non-indexées ! 
-- ATTENTION : Cela ne s’applique qu’aux fichiers déjà existant dans le dépôt
+- Cela permet d'enregistrer toutes les modifications en cours, même celles non-indexées ! 
+- ATTENTION : Cela ne s'applique qu'aux fichiers déjà existant dans le dépôt
  
 # git commit : Bonnes pratiques
 
 - Bonne pratique de « commit » Git :
-    - Ne concerne qu’une seule fonctionnalité du projet ;
+    - Ne concerne qu'une seule fonctionnalité du projet ;
     - Est le plus petit possible tout en restant cohérent ;
     - Idéalement, compile seul.
-- Un commit n’est pas, contrairement aux idées reçues, une liste 
-d’ajout/suppression/modification de lignes !
+- Un commit n'est pas, contrairement aux idées reçues, une liste 
+d'ajout/suppression/modification de lignes !
     - Git sauvegarde chaque fichier entièrement à chaque changement.
         - Avec des métadonnées (commentaire, auteur, email, date, …)
 
 # Etats de fichiers
 - La commande git status permet de lister les modifications en cours du 
-dossier de travail et de la zone d’index.
+dossier de travail et de la zone d'index.
 - En gros, les fichiers non enregistrés dans le dépôt.
 - Quatre états possibles :
 - **untracked**
     - Non suivi, le fichier est inconnu de Git !
 - **unmodified**
-    - Le fichier n’a pas été modifié depuis son dernier ajout au dépôt.
+    - Le fichier n'a pas été modifié depuis son dernier ajout au dépôt.
 - **modified**
     - Il y a des différences entre le fichier du répertoire de travail et celui du dépôt.
 - **staged**
-    - Le fichier est dans la zone d’index, il sera ajouté au prochain commit.
+    - Le fichier est dans la zone d'index, il sera ajouté au prochain commit.
+
+# Cycle de vie des états de fichiers
+
+diagrame
+
+
+# Exemple : git status
+imprime ecran
+
+# Gestion des modifications de fichiers
+
+Lorsque des fichiers sont modifiés, ils doivent être de nouveau ajoutés à la 
+zone d'index avant d'être validés dans le dépôt.
+- Les commandes suivantes sont donc nécessaires : 
+    - git add .
+- git commit -m "..."
+- Ces deux commandes peuvent être synthétisées en une seule (car le fichier 
+existe déjà dans le dépôt) : 
+    - git commit -am "..."
+- A noter que la commande git commit -a ajoutera à la zone d'index et 
+validera dans le dépôt l'ensemble des fichiers modifiés du répertoire de 
+travail 
+
+# L'historique d'un dépôt Git
+- L'historique d'un dépôt Git contient toute « l'histoire » d'un projet et de ses 
+fichiers, tout est toujours conservé !
+- Dans certaines situations, il est nécessaire d'interagir avec l'historique pour le 
+visualiser mais aussi parfois de le modifier.
+- Pourquoi modifier l'historique ?
+    - Un fichier a été oublié lors d'un commit ;
+    - Un bug subsiste ou bien un nouveau bug a été introduit lors d'un commit et 
+on ne veut pas revenir à des états de bugs dans l'historique ;
+    - Les commit ne sont pas suffisamment fin car ils concernent plusieurs 
+fonctionnalités à la fois.
+- Limites de la modification de l'historique :
+    - Ne modifiez jamais l'historique d'un dépôt ayant été partagé sur un dépôt 
+centralisé ! Vous impacterez tout le monde 
+
+# Les révisions
+- Chaque commit sur un dépôt créé une nouvelle révision de chaque fichier 
+modifié.
+- Chaque commit correspond en fait à un ensemble de révision, et donc de 
+changements, qui ont été validés.
+
+# Visualiser l'historique
+- La visualisation de l'historique permet de naviguer dans les changements du 
+projet et d'identifier les numéros (hash SHA-1) des commits pour intervenir 
+sur ceux-ci.
+```
+git log
+```
+
+- Cette commande dispose de nombreuses options pour personnaliser 
+l'affichage de l'historique.
+```
+git log --pretty=format:"%h - %an : %s"
+```
+```
+git log --oneline
+```
+```
+git log --graph
+```
+```
+git log --decorate
+```
+
+- Ces options sont cumulables !
+```
+git log --oneline--graph --decorate
+```
