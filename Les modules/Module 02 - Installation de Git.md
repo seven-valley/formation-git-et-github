@@ -66,6 +66,7 @@ d'installer tout XCode.
     - Terminal Linux ou macOS
     - Git Bash sous Windows (recommandé) ou une simple Invite de commande
 - Syntaxe :
+
 ```
  git <commande> [<arguments>]
 ```
