@@ -89,9 +89,14 @@ git help
 - **git help commande**
     - Aide sur la syntaxe et l'usage de la commande donnée en argument.
         - Affiche une « man page » dans un navigateur Web.
+```
+git help <commande>
+```
 - **git help tutorial**
     - Un tutoriel précis et concis sur Git
-
+```
+git help tutorial
+```
 ## Configuration de Git
 - Une configuration minimale de Git est nécessaire avant de pouvoir l'utiliser.
 - Git dispose de très nombreuses options permettant d'adapter son 
