@@ -69,11 +69,13 @@ d'installer tout XCode.
 
 ```
  git <commande> [<arguments>]
+
 ```
    
+    
+<img src="../img/02-git-commande.png" width="600">
   
-    <img src="../img/02-git-commande.png" width="600">
-
+  exemple :
 ```
 git --version
 ```
