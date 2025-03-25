@@ -30,7 +30,7 @@ nécessaire.
     ```
     git init
     ```
-    -Le répertoire n’existe pas :
+    - Le répertoire n’existe pas :
     ```
     git init <nom_répertoire>
     ```
