@@ -184,3 +184,16 @@ git log --decorate
 ```
 git log --oneline--graph --decorate
 ```
+# Les fichiers dans l’historique
+- La commande git log permet d’identifier chaque commit dans l’historique.
+- La commande git show permet de connaitre la liste des fichiers modifiés 
+par un commit.
+-Syntaxe : 
+```
+git show <numéro de commit.>
+```
+Affiche toutes les métadonnées, le nom et le contenu du fichier.
+```
+git show --name-only <numéro de commit.>
+```
+Permet un affichage plus concis.
