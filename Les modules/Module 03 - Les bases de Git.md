@@ -27,10 +27,10 @@ nécessaire.
 - Deux cas de figure : 
 - Le répertoire existe déjà (et contient peut être des fichiers de projet !) :
     - Se positionner dans le répertoire 
-```
-git init
-```
--Le répertoire n’existe pas :
-```
-git init <nom_répertoire>
-```
+    ```
+    git init
+    ```
+    -Le répertoire n’existe pas :
+    ```
+    git init <nom_répertoire>
+    ```
