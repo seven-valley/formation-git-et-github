@@ -112,7 +112,7 @@ dossier de travail et de la zone d'index.
 
 # Cycle de vie des états de fichiers
 
-diagrame
+<img src="../img/03-d1.png" width="600">
 
 
 # Exemple : git status
@@ -261,7 +261,7 @@ travail (comportement par défaut).
     - Les modifications sont supprimées de l'index ET du répertoire de travail
 
 # Les commandes de l'historique
-diagramme
+<img src="../img/03-d2.png" width="600">
 
 # Ignorer des fichiers
 

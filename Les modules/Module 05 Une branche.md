@@ -22,8 +22,10 @@ Une branche est un simple pointeur vers un commit particulier.
 risquer de modifier un code déjà testé et validé.
 - Les modifications pourront être ensuite reportées sur une autre branche.
     -Notion de « merge »
+<img src="../img/05-db1.png" width="600">
 
-diagramme
+# Exemple d’organisation
+<img src="../img/05-db2.png" width="600">
 
 ## La branche MASTER /MAIN
 :warning: La branche master est remplacé par **main**
@@ -164,7 +166,8 @@ git stash drop <nom de stash>
     - Ces étapes sont totalement transparentes pour le développeur
 
 # Exemple : commit de « merge »
-diagramme
+<img src="../img/05-db3.png" width="600">
+
 
 - Création d'une branche nommée fix1 à partir du commit C1 de la branche master. 
     - C2 est le premier commit de fix1. 
@@ -181,6 +184,7 @@ performances lorsque la branche cible de la fusion n'a pas subit de
 modification depuis la création de la branche à fusionner.
 - Dans ce cas, aucun commit de « merge » n'est créé.
     - Le pointeur de la branche master est déplacé sur C4
+<img src="../img/05-db4.png" width="600">
 
 # Supprimer une branche
 - Cas qui nécessitent la suppression d’une branche :
@@ -203,13 +207,14 @@ commit, il est possible de modifier la base d’une branche en incluant les
 commits d’une autre branche.
 - Situation avant le rebase :
 
+<img src="../img/05-db6.png" width="600">
 
 # git rebase
 - Opérations pour rebaser : 
     - git checkout master
     - git rebase fix1
 - Situation après le rebase :
-
+![alt text](image.png)
 # Les conflits de fusion
 
 - S’il y a eu des changements apportés aux 2 branches sur les mêmes lignes, il 

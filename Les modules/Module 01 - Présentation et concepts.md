@@ -57,8 +57,8 @@ chaque développeur. Une synchronisation est donc nécessaire périodiquement
 ## Les systèmes distribués : Git
 
 
-diagramme 2
 
+<img src="../img/02-d2.png" width="600">
 --------
 
 ## Avantages d’un système distribué
@@ -136,7 +136,7 @@ pour Git.
 
 ## Etats d’un fichier avec Git
 
-diagramme 3
+<img src="../img/02-d3.png" width="600">
 
 --------
 ## Quelques ressources sur Git
