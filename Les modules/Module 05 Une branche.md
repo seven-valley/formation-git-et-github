@@ -207,14 +207,15 @@ commit, il est possible de modifier la base d’une branche en incluant les
 commits d’une autre branche.
 - Situation avant le rebase :
 
-<img src="../img/05-db6.png" width="600">
+<img src="../img/05-db5.png" width="600">
 
 # git rebase
 - Opérations pour rebaser : 
     - git checkout master
     - git rebase fix1
 - Situation après le rebase :
-![alt text](image.png)
+<img src="../img/05-db6.png" width="600">
+  
 # Les conflits de fusion
 
 - S’il y a eu des changements apportés aux 2 branches sur les mêmes lignes, il 
