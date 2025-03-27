@@ -325,3 +325,18 @@ git clean -xdf
 ````
 git clean -Xf
 ````
+
+# Autres commandes utiles…
+- Renommer ou déplacer un fichier.
+```
+git mv <source> <destination>
+```
+- Supprimer un fichier du répertoire de travail et de la zone d’index.
+    ```
+    git rm <fichier>
+    ```
+    - L’option --cached permet de le supprimer uniquement de la zone d’index (Il devient 
+« untracked »).
+
+- Ces commandes nécessitent un commit pour que les modifications soient 
+prises en compte dans le dépôt.

@@ -50,7 +50,7 @@ chaque développeur. Une synchronisation est donc nécessaire périodiquement
 --------
 ## Les systèmes centralisés (CVS, SVN)
 
-diagramme 1
+<img src="../img/02-d1.png" width="600">
 
 --------
 
