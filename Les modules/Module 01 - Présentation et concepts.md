@@ -59,6 +59,7 @@ chaque développeur. Une synchronisation est donc nécessaire périodiquement
 
 
 <img src="../img/02-d2.png" width="600">
+
 --------
 
 ## Avantages d’un système distribué
