@@ -17,12 +17,15 @@
 - Le dépôt
 -Travailler avec le dépôt
  
-## :four: Les tags et les branches
+## :four: Les tags 
 - Qu’est-ce qu’un tag ?
 - Travailler avec les tags
+
+
+## :five: les branches
 - Qu’est-ce qu’une branche ?
 
-## :five: Git et les dépôts centralisés
+## :six: Git et les dépôts centralisés
 - Qu’est ce qu’un dépôt distant ?
 - Les protocoles d’échange.
 - Cloner un dépôt distant.
@@ -31,7 +34,11 @@
 - Envoyer des modifications.
  Recevoir des modifications.
  
- ## :six: Les outils pour Git
- the fork ?
+ ## :seven: Les outils pour Git
+
  - Solutions d’hébergement
+    - gitHub
+    - gitLab
  - Les outils graphiques
+    - Vs Code
+    - the fork 
