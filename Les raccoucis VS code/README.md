@@ -1,7 +1,3 @@
-# Liens vers les TP LIVE PREVIEW
-https://www.sevenvalley.fr/tp-javascript  
-
-
 
  :shipit:  
 # Les raccourcis VS CODE
