@@ -152,7 +152,7 @@ git config --global core.editor "'<chemin vers l'editeur>'
 - Exemple avec Notepad++ :
 
 ```
-git config --global core.editor "'C:\Program Files (x86)\Notepad++\notepad++.exe' -multiInst-notabbar-nosession-noPlugin"
+git config --global core.editor "C:\Program Files (x86)\Notepad++\notepad++.exe" -multiInst-notabbar-nosession-noPlugin
 ```
 
 ## Un proxy HTTP(S)
