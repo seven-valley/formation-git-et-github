@@ -91,17 +91,3 @@ le commit en tant que tel !
     ```
     git tag -d <nom du tag>
     ``` 
-
-# git rebase
-- Opérations pour rebaser : 
-    - git checkout master
-    - git rebase fix1
-- Situation après le rebase : 
-
-# Les conflits de fusion
-- S’il y a eu des changements apportés aux 2 branches sur les mêmes lignes, il 
-sera alors impossible de réaliser la fusion sans corriger le conflit au préalable.
-- Corriger le(s) fichier(s) en conflit.
-    - Penser à retirer les lignes <<<<, ==== et >>>>
-- Une fois le conflit résolu, utiliser la commande git add.
-- Terminer la fusion avec un git commit
