@@ -34,3 +34,17 @@ git push -u origin main
 ```
 git push 
 ```
+
+# Scénario de Mr Pink et Mr Blue
+
+Comment fait Mr Blue pour récupérer le repo de Mr Pink ?
+```
+git clone <repo>
+```
+:warning: attention on récupère un répertoire
+
+Comment fait Mr Pink pour récupérer le travail de Mr Blue ?  
+votre est "ahead"
+```
+git pull
+```
